@@ -21,7 +21,7 @@ Syntax
 {synopthdr}
 {synoptline}
 {syntab:Main}
-{synopt:{opt l:ayout}}defines the layout engine, which can be 
+{synopt:{opt l:ayout(name)}}defines the layout engine, which can be 
 {bf:geo} (default) or {bf:size}{p_end}
 {synopt:{opt s:ave(name)}}saves the new dataset{p_end}
 {synopt:{opt dsize(num)}}changes the distance scale between the duplicated observations. 
@@ -83,7 +83,7 @@ This help file was dynamically produced by
 
 
 
-*cap program drop neat
+cap program drop neat
 program neat
 	version 12
 	syntax varlist, [Layout(name) xsize(numlist max=1) ysize(numlist max=1)		///
@@ -344,5 +344,5 @@ program neat
 end
 
 
-*markdoc neat.ado, exp(sthlp) replace
+markdoc neat.ado, exp(sthlp) replace
 
