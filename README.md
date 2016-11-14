@@ -25,20 +25,22 @@ should be followed by a scatterplot command in Stata.
 
 Let's load an example dataset that has replicated observations for 2 variables. 
 
-```
-. colorcode bluishgray
 
-rgb  217 230 235
-hsv  197 .08 .92
-cmyk 18 5 0 20
+the **neat3.dta** includes 2 discrete variables named **v1** and **v2**.
+Let's begin by creating a scatter plot in Stata:
 
-. return list
+    .  use "https://raw.githubusercontent.com/haghish/neat/master/test/neat3.dta", clear
+    .  scatter v1 v2 
 
-macros:
-                r(rgb) : "217 230 235"
-                r(hsv) : "197 .08 .92"
-               r(cmyk) : "18 5 0 20"
-```
+![](https://raw.githubusercontent.com/haghish/neat/master/test/Weaver-figure/figure_2.png)
+
+Now let's apply the **`neat`** engine. This will change the duplicated
+observations in **v1** and **v2** variables.
+
+    .  neat v1 v2
+    .  scatter v1 v2
+
+![](https://raw.githubusercontent.com/haghish/neat/master/test/Weaver-figure/figure_3.png)
 
 
 Author

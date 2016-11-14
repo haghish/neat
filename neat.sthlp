@@ -19,7 +19,7 @@
 {synopthdr}
 {synoptline}
 {syntab:Main}
-{synopt:{opt l:ayout}}defines the layout engine, which can be 
+{synopt:{opt l:ayout(name)}}defines the layout engine, which can be 
 {bf:geo} (default) or {bf:size}{p_end}
 {synopt:{opt s:ave(name)}}saves the new dataset{p_end}
 {synopt:{opt dsize(num)}}changes the distance scale between the duplicated observations. 

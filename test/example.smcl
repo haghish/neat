@@ -1,0 +1,40 @@
+{smcl}
+{com}{sf}{ul off}{txt}
+{com}. 
+. /***
+> `neat` layout example
+> =====================
+> 
+> the __neat3.dta__ includes 2 discrete variables named __v1__ and __v2__. Let's 
+> begin by creating a scatter plot in Stata:
+> ***/
+. 
+. use "https://raw.githubusercontent.com/haghish/neat/master/test/neat3.dta", clear
+{txt}
+{com}. 
+. scatter v1 v2 
+{res}{txt}
+{com}. img
+
+{txt}>![](Weaver-figure/figure_2.png)
+
+
+{com}. 
+. /***
+> Now let's apply the __`neat`__ engine. This will change the duplicated 
+> observations in __v1__ and __v2__ variables. 
+> ***/
+. 
+. neat v1 v2
+{txt}
+{com}. scatter v1 v2
+{res}{txt}
+{com}. img
+
+{txt}>![](Weaver-figure/figure_3.png)
+
+
+{com}. 
+. qui log c
+{smcl}
+{com}{sf}{ul off}
