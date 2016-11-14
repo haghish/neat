@@ -1,0 +1,18 @@
+d 'NEAT': a layout engine for visualizing duplicated observations in scatter plot
+d
+d  neat is a layout engine that creates geometric shapes out of duplicated 
+d  observations to avoid making them appear as a single dot in the scatter plot
+d
+d KW: Data visualization
+d KW: Scatter plot
+d KW: Graph
+d
+d Requires: Stata version 12
+d
+d Distribution-Date: 20161108
+d
+d Author: E.F. Haghish, University of Southern Denmark
+d Support: email haghish@imada.sdu.dk
+d
+F neat.ado
+F neat.sthlp

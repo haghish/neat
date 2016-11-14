@@ -1,0 +1,3 @@
+v 1.0.0
+d 'NEAT': a layout engine for visualizing duplicated observations in scatter plot
+p neat
