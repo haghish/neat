@@ -56,6 +56,12 @@ in place. Now let's alter another variable, the __dsize__ option which increases
 the distance between the geometric shapes, resulting in larger shapes. The default 
 value is 5, so we can try 7! 
 ***/
+
+use "https://raw.githubusercontent.com/haghish/neat/master/test/neat3.dta", clear
+neat v1 v2 , dsize(7) 
+scatter v1 v2
+img
+
 qui log c
 
 markdoc example, replace

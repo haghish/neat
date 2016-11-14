@@ -1,5 +1,5 @@
 /*** DO NOT EDIT THIS LINE -----------------------------------------------------
-Version: 1.0.0
+Version: 1.0.2
 Title: neat
 Description: a layout engine that alters the duplicated observations in 2 variables 
 in order to display them in a geometrically appealing way within scatter plots 
@@ -86,7 +86,7 @@ This help file was dynamically produced by
 
 
 
-cap program drop neat
+*cap program drop neat
 program neat
 	version 12
 	syntax varlist, [Layout(name) xsize(numlist max=1) ysize(numlist max=1)		///
@@ -347,5 +347,5 @@ program neat
 end
 
 
-markdoc neat.ado, exp(sthlp) replace
+*markdoc neat.ado, exp(sthlp) replace
 
