@@ -26,9 +26,12 @@ Syntax
 {synopt:{opt s:ave(name)}}saves the new dataset{p_end}
 {synopt:{opt dsize(num)}}changes the distance scale between the duplicated observations. 
 the default is {bf:5} {p_end}
-{synopt:{opt msize(num)}}takes the size (numeric only) of the marker into account. {p_end}
-{synopt:{opt xsize(num)}}takes the size of the X-axis into account. {p_end}
-{synopt:{opt ysize(num)}}takes the size of the Y-axis into account. {p_end}
+{synopt:{opt msize(num)}}takes the size (numeric only) of the marker into account. 
+the default value is {bf:1.5}{p_end}
+{synopt:{opt xsize(num)}}takes the size of the X-axis into account. The 
+default value is {bf:5.5}{p_end}
+{synopt:{opt ysize(num)}}takes the size of the Y-axis into account. The default 
+value is {bf:4}.{p_end}
 {synoptline}
 {p2colreset}{...}
 
