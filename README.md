@@ -70,7 +70,7 @@ default value (i.e. 5.5):
      . scatter v1 v2, msize(1.1) xsize(6.5)
 
 
-![](Weaver-figure/figure_9.png)
+![](https://raw.githubusercontent.com/haghish/neat/master/test/Weaver-figure/figure_9.png)
 
 Despite the scalings, the graph still looks fine and the geometric
 shapes are in place. Now let's alter another variable, the **dsize**
@@ -82,7 +82,7 @@ resulting in larger shapes. The default value is 5, so we can try 7!
      . scatter v1 v2
   
 
-![](https://raw.githubusercontent.com/haghish/neat/master/test/Weaver-figure/Weaver-figure/figure_10.png)
+![](https://raw.githubusercontent.com/haghish/neat/master/test/Weaver-figure/figure_10.png)
 
 
 Author
