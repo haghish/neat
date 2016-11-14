@@ -1,26 +1,29 @@
-# `colorcode` : a module to return RGB, CMYK, and HSV values for Stata colors
+# `neat` : a Stata layout module to create geometric shapes out of replicates in scatter plot
 
 
 If you have [github](https://github.com/haghish/github) command installed, you can simply install 
 the package by typing:
 
 ```{js}
-github install haghish/colorcode
+github install haghish/neat
 ```
 
 Otherwise, you can install it using `net install` command as shown below:
 
 ```{js}
-net install github, replace from("https://raw.githubusercontent.com/haghish/github/master/")
+net install github, replace from("https://raw.githubusercontent.com/haghish/neat/master/")
 ```
 
 ### Syntax
 
-The command simply takes a _stata color name_ and returns the values for RGB, CMYK, and HSV as __rclass__ macros. 
+The command simply takes 2 Stata variables along with the options required for adjusting the size of 
+a scatterplot graph in Stata. The command alters the values of the variables in a way to create 
+geometrically appealing shapes out of replicated observations in scatter plots. Therefore, the command 
+should be followed by a scatterplot command in Stata.  
 
 ### Example
 
-Say, you want to obtain the RGB code of a Stata color e.g. `bluishgray`:
+Let's load an example dataset that has replicated observations for 2 variables. 
 
 ```
 . colorcode bluishgray
