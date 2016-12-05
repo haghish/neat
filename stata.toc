@@ -1,3 +1,6 @@
-v 1.0.0
-d 'NEAT': a layout engine for visualizing duplicated observations in scatter plot
+v 1.0.3
+d 'NEAT': a layout engine that alters the duplicated observations in 2 variables
+d in order to display them in a geometrically appealing way within scatter plots 
+d instead of adding random noise using the {help scatter##jitter_options:jitter} 
+d option. 
 p neat

@@ -1,5 +1,5 @@
 /*** DO NOT EDIT THIS LINE -----------------------------------------------------
-Version: 1.0.2
+Version: 1.0.3
 Title: neat
 Description: a layout engine that alters the duplicated observations in 2 variables 
 in order to display them in a geometrically appealing way within scatter plots 
@@ -125,7 +125,7 @@ program neat
 	// Engine
 	// -----------------------------------------------------------------------
 	tempvar dup
-	quietly duplicates tag v1 v2, generate(`dup')
+	quietly duplicates tag `v1' `v2', generate(`dup')
 	
 	if "`layout'" == "geo" {
 		
@@ -347,5 +347,5 @@ program neat
 end
 
 
-*markdoc neat.ado, exp(sthlp) replace
+*markdoc neat.ado, exp(sthlp) replace build
 
